@@ -9,6 +9,7 @@ script:
   - docker run -e CI=true skaan/docker-react npm run test -- --coverage
 
 deploy:
+  edge: true
   provider: elasticbeanstalk
   region: "eu-central-1"
   app: "docker-react"
